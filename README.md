@@ -63,7 +63,7 @@ WebDriver Manager [visit](https://bonigarcia.dev/webdrivermanager/)
 ```
 
 
-## How to install the utility to your system
+## How to install the project to your system
 * clone the git repo to your workspace. Use this code -
   ` git clone https://github.com/Git-Nayanjyoti/SeleniumAssignmentC.git `
 * Now Import the file to eclipse. (Import -> General -> Already existing project to eclipse -> browse the dir -> Finish)
