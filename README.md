@@ -7,7 +7,7 @@
 
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-## Stock Price Fetcher
+## Stock Data Fetcher
 Stock Price Fetcher is an application which captures Name, LTP, %Chg, Volume, Buy Price, Sell Price, Buy Qty, Sell Qty of various stock from a financial website and stores it in an excel file.
 This repository will give you an idea of how we can capture data from a website using selenium and then store the same into an excel file.
 
