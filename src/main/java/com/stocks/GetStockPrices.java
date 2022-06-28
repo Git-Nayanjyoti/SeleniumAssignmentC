@@ -103,6 +103,7 @@ public class GetStockPrices extends Base {
 
 			// for making the program to start again after 10 mins
 			TimeUnit.MINUTES.sleep(10);
+			finalData = null;
 
 		}
 
