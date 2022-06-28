@@ -26,16 +26,18 @@ public class GetStockPrices extends Base {
 		// for getting the data after every 10 minutes using a infinite loop with sleep
 		while (true) {
 
+			//creating a new workbook
 			XSSFWorkbook workbook = new XSSFWorkbook();
+			
+			//creating a sheet for the workbook
 			XSSFSheet sheet = workbook.createSheet("Stock Prices");
-			js = (JavascriptExecutor) driver;
 
 			// Setting the browser and the url of the website here
 			setBrowser("chrome", "https://www.moneycontrol.com/markets/indian-indices/");
 			Thread.sleep(2000);
 
 			// creating object of JavascriptExecutor to scroll down through the webpage
-			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0,350)", "");
 
 			// Setting the header of the table
