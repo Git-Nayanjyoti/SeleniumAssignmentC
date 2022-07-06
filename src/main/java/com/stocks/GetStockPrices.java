@@ -2,7 +2,10 @@ package com.stocks;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -40,6 +43,11 @@ public class GetStockPrices extends Base {
 			js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0,350)", "");
 
+			//get current time
+			DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+			Date date = new Date();
+			String Date = dateFormat.format(date);
+			
 			// Setting the header of the table
 			finalData.add(
 					new Object[] { 
@@ -50,7 +58,8 @@ public class GetStockPrices extends Base {
 							"Buy Price",
 							"Sell Price",
 							"Buy Qty",
-							"Sell Qty"
+							"Sell Qty",
+							"Date & Time"
 						});
 
 			// passing the xpath of the table body present in the website
@@ -75,7 +84,8 @@ public class GetStockPrices extends Base {
 						entities[4],
 						entities[5],
 						entities[6],
-						entities[7]
+						entities[7],
+						Date
 					});
 
 			}
